@@ -1,0 +1,2 @@
+Generative AI focuses on creating new content such as text, images,
+or code using models trained on large datasets.
