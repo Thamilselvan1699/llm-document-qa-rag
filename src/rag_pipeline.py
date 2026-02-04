@@ -1,13 +1,14 @@
-from langchain.chains import RetrievalQA
 from langchain.llms import OpenAI
-from src.load_docs import load_documents
-from src.embed_store import create_vector_store
 
-def answer_question(question):
-    docs = load_documents()
-    vectorstore = create_vector_store(docs)
-    qa = RetrievalQA.from_chain_type(
-        llm=OpenAI(),
-        retriever=vectorstore.as_retriever()
-    )
-    return qa.run(question)
+def generate_answer(query, vector_store):
+    docs = vector_store.similarity_search(query, k=3)
+    context = " ".join([d.page_content for d in docs])
+
+    prompt = f"""
+    Answer the question using only the context below.
+    Context: {context}
+    Question: {query}
+    """
+
+    llm = OpenAI(temperature=0)
+    return llm(prompt)
