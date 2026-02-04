@@ -1,5 +1,4 @@
 langchain
-faiss-cpu
 openai
-tiktoken
-python-dotenv
+faiss-cpu
+streamlit
