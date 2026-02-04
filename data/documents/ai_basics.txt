@@ -1,3 +1,4 @@
-Artificial Intelligence (AI) refers to systems that can perform tasks
-that typically require human intelligence such as reasoning, learning,
-and decision making.
+Artificial Intelligence (AI) refers to systems that simulate human intelligence.
+AI systems can perform tasks such as reasoning, learning, problem-solving, and decision making.
+Common AI techniques include rule-based systems, machine learning, and deep learning.
+AI is widely used in enterprise automation, healthcare, finance, and recommendation systems.
