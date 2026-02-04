@@ -1,4 +1,4 @@
-from langchain.llms import OpenAI
+from langchain_openai import OpenAI
 
 def generate_answer(query, vector_store):
     docs = vector_store.similarity_search(query, k=3)
