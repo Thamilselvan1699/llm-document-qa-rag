@@ -1,2 +1,4 @@
-Generative AI focuses on creating new content such as text, images,
-or code using models trained on large datasets.
+Generative AI uses models like large language models to generate human-like text.
+LLMs are trained on massive datasets and predict the next token in a sequence.
+Retrieval Augmented Generation (RAG) combines LLMs with external knowledge sources.
+RAG helps reduce hallucinations by grounding responses in retrieved documents.
