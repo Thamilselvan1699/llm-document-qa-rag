@@ -1,10 +1,9 @@
-from langchain.document_loaders import TextLoader
 import os
 
-def load_documents(path="data/documents"):
-    docs = []
-    for file in os.listdir(path):
+def load_documents(folder_path):
+    documents = []
+    for file in os.listdir(folder_path):
         if file.endswith(".txt"):
-            loader = TextLoader(os.path.join(path, file))
-            docs.extend(loader.load())
-    return docs
+            with open(os.path.join(folder_path, file), "r", encoding="utf-8") as f:
+                documents.append(f.read())
+    return documents
