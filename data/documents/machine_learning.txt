@@ -1,2 +1,4 @@
-Machine Learning is a subset of AI that enables systems to learn patterns
-from data and improve performance without being explicitly programmed.
+Machine Learning is a subset of Artificial Intelligence focused on learning patterns from data.
+Supervised learning uses labeled data, while unsupervised learning finds hidden patterns.
+Common ML algorithms include linear regression, decision trees, and random forests.
+Model evaluation metrics include accuracy, precision, recall, and F1-score.
